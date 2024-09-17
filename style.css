@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapers.com/images/hd/psychology-human-heads-trees-kissing-anp53oe4rz0pd9zv.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+header ul li a:hover, header ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 120px;
+    margin-left: 80px;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-left: 50px;
+    margin-top: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-right: 50px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.login-container label {
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container .psw a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-container .psw a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 6px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.video-container {
+    text-align: right;
+    margin: 0 auto;
+    max-width: 60%;
+    margin-top: 5px;
+    margin-right: 70px;
+}
+
+video {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .login-container {
+        margin: 20px auto;
+    }
+    .login-container, h1, h2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .video-container {
+        max-width: 100%;
+    }
+}
+
+.icons {
+    position: fixed;
+    bottom: 60px; 
+    left: 20px; 
+    display: flex;
+    gap: 15px;
+    z-index: 100; 
+}
+
+.icons a {
+    color: grey; 
+    font-size: 24px; 
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #333; 
+}
